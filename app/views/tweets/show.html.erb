@@ -1,0 +1,8 @@
+
+<p>
+  <strong>Tweet</strong>
+  <%= @tweet.body %>
+</p>
+
+<%= link_to 'Back', tweets_path %>|
+<%=link_to 'Sign out', destroy_user_session_path, method: :delete %>
