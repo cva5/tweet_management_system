@@ -15,6 +15,19 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer',  platforms: :ruby
+group :development, :test do
+  gem 'rspec-rails'
+  gem 'factory_girl_rails'
+  gem 'capybara'
+  gem 'spring-commands-rspec'
+  gem 'shoulda-matchers'
+  gem 'database_cleaner'
+  gem 'rspec-collection_matchers'
+end
+
+group :test do
+	gem 'webmock'
+end
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
